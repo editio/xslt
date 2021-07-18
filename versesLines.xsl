@@ -19,8 +19,21 @@
   <!-- it excludes the element in the output -->
 
   <xsl:template match="//app/rdg[@wit='#wit-1617-O']"/>
-
   <!-- it excludes the element in the output -->
+  
+  
+  <!-- <xsl:template match="//app/rdg"/> -->
+  <!-- it excludes the element in the output -->
+
+  <!-- Only if there is a lemma or anchor, that is, a choosen variant, otherways it excludes all variants, for example (from <http://damaboba.unibo.it>): 
+
+  <l n="1">¡Qué <seg xml:id="a1b" type="appAnchor">lindas</seg>
+                  <app from="#a1b">
+                     <rdg wit="#O">lindas</rdg>
+                     <rdg wit="#M #A">buenas</rdg>
+                  </app> posadas!
+               </l>
+   -->
 
   <xsl:strip-space elements="*"/>
   <!-- it removes blank spaces between elements -->
